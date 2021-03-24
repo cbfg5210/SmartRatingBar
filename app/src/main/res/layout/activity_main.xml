@@ -24,8 +24,8 @@
         app:layout_constraintStart_toStartOf="@+id/tvHorizontalLabel"
         app:layout_constraintTop_toBottomOf="@+id/tvHorizontalLabel"
         app:srbGap="10dp"
-        app:srbIndicator="false"
-        app:srbMax="5"
+        app:srbIsIndicator="false"
+        app:srbNumStars="5"
         app:srbOrientation="horizontal"
         app:srbRating="1.2" />
 
@@ -47,8 +47,8 @@
         app:layout_constraintStart_toStartOf="@+id/tvVerticalLabel"
         app:layout_constraintTop_toBottomOf="@+id/tvVerticalLabel"
         app:srbGap="10dp"
-        app:srbIndicator="false"
-        app:srbMax="5"
+        app:srbIsIndicator="false"
+        app:srbNumStars="5"
         app:srbOrientation="vertical" />
 
     <TextView
@@ -56,7 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:text="垂直方向-srbIndicator："
+        android:text="垂直方向-srbIsIndicator："
         app:layout_constraintStart_toEndOf="@+id/srbVRating"
         app:layout_constraintTop_toTopOf="@+id/tvHorizontalLabel" />
 
@@ -69,7 +69,7 @@
         app:layout_constraintStart_toStartOf="@+id/tvVerticalLabel2"
         app:layout_constraintTop_toBottomOf="@+id/tvVerticalLabel2"
         app:srbGap="10dp"
-        app:srbIndicator="true"
-        app:srbMax="5"
+        app:srbIsIndicator="true"
+        app:srbNumStars="5"
         app:srbOrientation="vertical" />
 </androidx.constraintlayout.widget.ConstraintLayout>

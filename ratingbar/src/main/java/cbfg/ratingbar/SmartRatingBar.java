@@ -45,8 +45,9 @@ public class SmartRatingBar extends View {
             TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.SmartRatingBar);
             mRatingNum = typedArray.getFloat(R.styleable.SmartRatingBar_srbRating, 2.5f);
             mGapSize = typedArray.getDimensionPixelSize(R.styleable.SmartRatingBar_srbGap, 0);
-            mMaxStarNum = typedArray.getInt(R.styleable.SmartRatingBar_srbMax, 5);
-            mIndicator = typedArray.getBoolean(R.styleable.SmartRatingBar_srbIndicator, true);
+            mMaxStarNum = typedArray.getInt(R.styleable.SmartRatingBar_srbNumStars, 5);
+            mRatingStepSize = typedArray.getFloat(R.styleable.SmartRatingBar_srbStepSize, 0.1f);
+            mIndicator = typedArray.getBoolean(R.styleable.SmartRatingBar_srbIsIndicator, true);
             mOrientation = typedArray.getInt(R.styleable.SmartRatingBar_srbOrientation, LinearLayout.HORIZONTAL);
             mRatingDrawable = typedArray.getDrawable(R.styleable.SmartRatingBar_srbFullDrawable);
             mRatingBackgroundDrawable = typedArray.getDrawable(R.styleable.SmartRatingBar_srbEmptyDrawable);
