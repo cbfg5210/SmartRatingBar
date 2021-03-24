@@ -43,13 +43,13 @@ public class SmartRatingBar extends View {
     private void init(Context context, AttributeSet attrs) {
         if (attrs != null) {
             TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.SmartRatingBar);
-            mRatingNum = typedArray.getFloat(R.styleable.SmartRatingBar_rating, 2.5f);
-            mGapSize = typedArray.getDimensionPixelSize(R.styleable.SmartRatingBar_gap, 0);
-            mMaxStarNum = typedArray.getInt(R.styleable.SmartRatingBar_maxRating, 5);
-            mIndicator = typedArray.getBoolean(R.styleable.SmartRatingBar_indicator, true);
-            mOrientation = typedArray.getInt(R.styleable.SmartRatingBar_orientation, LinearLayout.HORIZONTAL);
-            mRatingDrawable = typedArray.getDrawable(R.styleable.SmartRatingBar_ratingDrawable);
-            mRatingBackgroundDrawable = typedArray.getDrawable(R.styleable.SmartRatingBar_backgroundDrawable);
+            mRatingNum = typedArray.getFloat(R.styleable.SmartRatingBar_srbRating, 2.5f);
+            mGapSize = typedArray.getDimensionPixelSize(R.styleable.SmartRatingBar_srbGap, 0);
+            mMaxStarNum = typedArray.getInt(R.styleable.SmartRatingBar_srbMax, 5);
+            mIndicator = typedArray.getBoolean(R.styleable.SmartRatingBar_srbIndicator, true);
+            mOrientation = typedArray.getInt(R.styleable.SmartRatingBar_srbOrientation, LinearLayout.HORIZONTAL);
+            mRatingDrawable = typedArray.getDrawable(R.styleable.SmartRatingBar_srbFullDrawable);
+            mRatingBackgroundDrawable = typedArray.getDrawable(R.styleable.SmartRatingBar_srbEmptyDrawable);
             typedArray.recycle();
         }
         if (mRatingDrawable == null && mRatingBackgroundDrawable == null) {

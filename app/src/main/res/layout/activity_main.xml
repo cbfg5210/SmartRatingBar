@@ -21,13 +21,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        app:gap="10dp"
-        app:indicator="false"
         app:layout_constraintStart_toStartOf="@+id/tvHorizontalLabel"
         app:layout_constraintTop_toBottomOf="@+id/tvHorizontalLabel"
-        app:maxRating="5"
-        app:orientation="horizontal"
-        app:rating="1.2" />
+        app:srbGap="10dp"
+        app:srbIndicator="false"
+        app:srbMax="5"
+        app:srbOrientation="horizontal"
+        app:srbRating="1.2" />
 
     <TextView
         android:id="@+id/tvVerticalLabel"
@@ -43,20 +43,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        app:gap="10dp"
-        app:indicator="false"
         app:layout_constraintEnd_toEndOf="@+id/tvVerticalLabel"
         app:layout_constraintStart_toStartOf="@+id/tvVerticalLabel"
         app:layout_constraintTop_toBottomOf="@+id/tvVerticalLabel"
-        app:maxRating="5"
-        app:orientation="vertical" />
+        app:srbGap="10dp"
+        app:srbIndicator="false"
+        app:srbMax="5"
+        app:srbOrientation="vertical" />
 
     <TextView
         android:id="@+id/tvVerticalLabel2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:text="垂直方向-indicator："
+        android:text="垂直方向-srbIndicator："
         app:layout_constraintStart_toEndOf="@+id/srbVRating"
         app:layout_constraintTop_toTopOf="@+id/tvHorizontalLabel" />
 
@@ -65,11 +65,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        app:gap="10dp"
-        app:indicator="true"
         app:layout_constraintEnd_toEndOf="@+id/tvVerticalLabel2"
         app:layout_constraintStart_toStartOf="@+id/tvVerticalLabel2"
         app:layout_constraintTop_toBottomOf="@+id/tvVerticalLabel2"
-        app:maxRating="5"
-        app:orientation="vertical" />
+        app:srbGap="10dp"
+        app:srbIndicator="true"
+        app:srbMax="5"
+        app:srbOrientation="vertical" />
 </androidx.constraintlayout.widget.ConstraintLayout>

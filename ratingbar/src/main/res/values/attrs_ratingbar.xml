@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SmartRatingBar">
+        <attr name="srbMax" format="integer" />
+        <attr name="srbGap" format="dimension" />
+        <attr name="srbRating" format="float" />
+        <attr name="srbOrientation" format="integer">
+            <enum name="vertical" value="1" />
+            <enum name="horizontal" value="0" />
+        </attr>
+        <attr name="srbFullDrawable" format="reference" />
+        <attr name="srbEmptyDrawable" format="reference" />
+        <attr name="srbIndicator" format="boolean" />
+    </declare-styleable>
+</resources>
