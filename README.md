@@ -22,3 +22,17 @@ dependencies {
 	implementation 'com.gitee.cbfg5210:SmartRatingBar:$version'
 }
 ```
+
+## 属性说明
+
+|  属性   | 类型  | 说明  |
+|  ----  | ----  | ----  |
+| srbNumStars  | integer | 星星数量 |
+| srbGap  | dimension | 间隔距离 |
+| srbRating  | float | 分数值 |
+| srbStepSize  | float | 打分步长 |
+| srbOrientation  | integer | 排列方向 |
+| srbFullDrawable  | reference | 满分的图片 |
+| srbEmptyDrawable  | reference | 零分的图片 |
+| srbIsIndicator  | boolean | 是否只作为指示，是的话用户点击不会改变评分状态 |
+
