@@ -36,3 +36,5 @@ dependencies {
 | srbEmptyDrawable  | reference | 零分的图片 |
 | srbIsIndicator  | boolean | 是否只作为指示，是的话用户点击不会改变评分状态 |
 
+## Demo 截图
+![demo 截图](https://gitee.com/cbfg5210/SmartRatingBar/raw/master/arts/SmartRatingBar.png)
