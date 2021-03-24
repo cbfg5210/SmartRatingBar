@@ -7,12 +7,69 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvHorizontalLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="水平方向："
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <cbfg.ratingbar.SmartRatingBar
+        android:id="@+id/srbHRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:gap="10dp"
+        app:indicator="false"
+        app:layout_constraintStart_toStartOf="@+id/tvHorizontalLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvHorizontalLabel"
+        app:maxRating="5"
+        app:orientation="horizontal"
+        app:rating="1.2" />
+
+    <TextView
+        android:id="@+id/tvVerticalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="垂直方向："
+        app:layout_constraintStart_toEndOf="@+id/srbHRating"
+        app:layout_constraintTop_toTopOf="@+id/tvHorizontalLabel" />
+
+    <cbfg.ratingbar.SmartRatingBar
+        android:id="@+id/srbVRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:gap="10dp"
+        app:indicator="false"
+        app:layout_constraintEnd_toEndOf="@+id/tvVerticalLabel"
+        app:layout_constraintStart_toStartOf="@+id/tvVerticalLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvVerticalLabel"
+        app:maxRating="5"
+        app:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/tvVerticalLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="垂直方向-indicator："
+        app:layout_constraintStart_toEndOf="@+id/srbVRating"
+        app:layout_constraintTop_toTopOf="@+id/tvHorizontalLabel" />
+
+    <cbfg.ratingbar.SmartRatingBar
+        android:id="@+id/srbVRating2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:gap="10dp"
+        app:indicator="true"
+        app:layout_constraintEnd_toEndOf="@+id/tvVerticalLabel2"
+        app:layout_constraintStart_toStartOf="@+id/tvVerticalLabel2"
+        app:layout_constraintTop_toBottomOf="@+id/tvVerticalLabel2"
+        app:maxRating="5"
+        app:orientation="vertical" />
 </androidx.constraintlayout.widget.ConstraintLayout>
